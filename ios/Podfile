@@ -1,0 +1,7 @@
+platform :ios, '9.3'
+target 'ar_project' do
+  use_frameworks!
+  pod 'ViroReact', :path => '../node_modules/react-viro/ios/'
+  pod 'ViroKit', :path => '../node_modules/react-viro/ios/dist/ViroRenderer/'
+  system(". ./pod_post_install.sh")
+end
